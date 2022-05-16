@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-const url = "http://localhost:5000/emails";
+const url = "https://stocker-website.herokuapp.com/emails";
 
 export const sendEmail = (newEmail) => axios.post(url, newEmail);
