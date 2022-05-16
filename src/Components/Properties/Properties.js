@@ -10,7 +10,7 @@ const Properties = ({ BgColor, TextColor, Text }) => {
   
   const viewPortHandler = () => {
     if (innerWidth < 425) {
-      return "21px";
+      return "23px";
     }else{
       return "20px";
     }
