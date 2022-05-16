@@ -21,7 +21,7 @@ const Properties = ({ BgColor, TextColor, Text }) => {
       <Container>
         <Wrapper >
           <Header style={{ background: BgColor[0], color: TextColor[0] }}>
-            <FaEye style={viewPortHandler} />
+            <FaEye style={{ fontSize: viewPortHandler()}} />
             {Text}
           </Header>
           <Title>The world's first personal AI stock screener</Title>
