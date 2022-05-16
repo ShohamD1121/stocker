@@ -14,7 +14,7 @@ const Features = () => {
       <Navbar />
       <br />
       <br />
-      <h1 style={{ textAlign: "center" , fontSize : "3rem"}}>Features</h1>
+      <h1 style={{ textAlign: "center" , fontSize : "var(--fs-h1)" , color : "#24d878"}}>Features</h1>
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour} />
