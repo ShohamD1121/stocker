@@ -94,9 +94,9 @@ const InfoSection = ({
                     )}
                     {!isMain && objNum === 4 && (
                       <Header
-                        style={{ background: "#D6FFDE", color: "#00D72B" ,  margin : "auto"}}
+                        style={{ background: "#D6FFDE", color: "#00D72B"}}
                       >
-                        <FaNewspaper style={{ fontSize: "20px" }} /> News and
+                        <FaNewspaper style={{ fontSize: "20px", margin : "auto" }} /> News and
                         Analysis
                       </Header>
                     )}
