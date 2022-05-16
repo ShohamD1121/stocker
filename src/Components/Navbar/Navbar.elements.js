@@ -64,11 +64,12 @@ export const MobileIcon = styled.div`
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.75rem;
+    margin : auto;
     cursor: pointer;
   }
-  @media screen and (max-width: 425px) {
+  /* @media screen and (max-width: 425px) {
     font-size: 1.5rem;
-  }
+  } */
 `;
 
 export const NavMenu = styled.ul`
