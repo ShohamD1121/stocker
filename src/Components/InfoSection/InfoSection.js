@@ -82,19 +82,19 @@ const InfoSection = ({
                       <Header
                         style={{ background: "#D6FFDE", color: "#00D72B" }}
                       >
-                        <FaSearch style={{ fontSize: "20px" }} /> Stock Picking
+                        <FaSearch style={{ fontSize: "20px",  margin : "auto" }} /> Stock Picking
                       </Header>
                     )}
                     {!isMain && objNum === 3 && (
                       <Header
                         style={{ background: "#D6FFDE", color: "#00D72B" }}
                       >
-                        <FaDollarSign style={{ fontSize: "20px" }} /> Financials
+                        <FaDollarSign style={{ fontSize: "20px", margin : "auto" }} /> Financials
                       </Header>
                     )}
                     {!isMain && objNum === 4 && (
                       <Header
-                        style={{ background: "#D6FFDE", color: "#00D72B" }}
+                        style={{ background: "#D6FFDE", color: "#00D72B" ,  margin : "auto"}}
                       >
                         <FaNewspaper style={{ fontSize: "20px" }} /> News and
                         Analysis

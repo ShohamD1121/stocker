@@ -2,19 +2,9 @@ import React, { Fragment } from "react";
 import { Header, Wrapper,SecondWrapper, Title, Description, SmallTitle, SmallDescription } from "./Propeties.elements";
 import { FaEye, FaDatabase, FaCode, FaUserFriends } from "react-icons/fa";
 import { Container } from "../../globalStyles";
-import useWindowDimensions from "../../hooks/useWindowDimensions.js";
 
 const Properties = ({ BgColor, TextColor, Text }) => {
 
-  const innerWidth = useWindowDimensions().width;
-  
-  const viewPortHandler = () => {
-    if (innerWidth < 425) {
-      return "24px";
-    }else{
-      return "20px";
-    }
-  }
 
   return (
     <Fragment>
