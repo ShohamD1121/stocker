@@ -66,6 +66,9 @@ export const MobileIcon = styled.div`
     font-size: 1.75rem;
     cursor: pointer;
   }
+  @media screen and (max-width: 425px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const NavMenu = styled.ul`
