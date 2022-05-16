@@ -2,16 +2,26 @@ import React, { Fragment } from "react";
 import { Header, Wrapper,SecondWrapper, Title, Description, SmallTitle, SmallDescription } from "./Propeties.elements";
 import { FaEye, FaDatabase, FaCode, FaUserFriends } from "react-icons/fa";
 import { Container } from "../../globalStyles";
+import useWindowDimensions from "../../hooks/useWindowDimensions.js";
 
 const Properties = ({ BgColor, TextColor, Text }) => {
 
+  const innerWidth = useWindowDimensions().width;
+  
+  const viewPortHandler = () => {
+    if (innerWidth < 425) {
+      return "15px";
+    }else{
+      return "20px";
+    }
+  }
 
   return (
     <Fragment>
       <Container>
         <Wrapper >
           <Header style={{ background: BgColor[0], color: TextColor[0] }}>
-            <FaEye style={{ fontSize: "20px"}} />
+            <FaEye style={viewPortHandler} />
             {Text}
           </Header>
           <Title>The world's first personal AI stock screener</Title>

@@ -31,7 +31,7 @@ export const Header = styled.div`
   margin: 64px auto 30px;
   font-size: 17px;
   @media screen and (max-width: 425px) {
-    font-size : 22px;
+    font-size : 17px;
   }
 `;
 
