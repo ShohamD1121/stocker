@@ -5,12 +5,13 @@ import { Container } from "../../globalStyles";
 
 const Properties = ({ BgColor, TextColor, Text }) => {
 
+
   return (
     <Fragment>
       <Container>
         <Wrapper >
           <Header style={{ background: BgColor[0], color: TextColor[0] }}>
-            <FaEye style={{ fontSize: "20px" }} />
+            <FaEye style={{ fontSize: "20px"}} />
             {Text}
           </Header>
           <Title>The world's first personal AI stock screener</Title>

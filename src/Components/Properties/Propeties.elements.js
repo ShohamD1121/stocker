@@ -30,6 +30,9 @@ export const Header = styled.div`
   padding: 10px 15px;
   margin: 64px auto 30px;
   font-size: 17px;
+  @media screen and (max-width: 425px) {
+    font-size : 20px;
+  }
 `;
 
 export const Title = styled.h1`
