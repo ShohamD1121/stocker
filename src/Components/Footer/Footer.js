@@ -36,21 +36,21 @@ const Footer = () => {
         <FooterLinksWrapper>
           <FooterLinksItems>
             <FooterLinkTitle>Features</FooterLinkTitle>
-            <FooterRegularLink to="/stocker/features">Stock Picks </FooterRegularLink>
-            <FooterRegularLink to="/stocker/features">Financials </FooterRegularLink>
-            <FooterRegularLink to="/stocker/features">News & Analysis</FooterRegularLink>
+            <FooterRegularLink to="/features">Stock Picks </FooterRegularLink>
+            <FooterRegularLink to="/features">Financials </FooterRegularLink>
+            <FooterRegularLink to="/features">News & Analysis</FooterRegularLink>
           </FooterLinksItems>
           <FooterLinksItems>
             <FooterLinkTitle>Support</FooterLinkTitle>
-            <FooterRegularLink to="/stocker/contact-us">Contact Us </FooterRegularLink>
-            <FooterRegularLink to="/stocker/faq">FAQ </FooterRegularLink>
+            <FooterRegularLink to="/contact-us">Contact Us </FooterRegularLink>
+            <FooterRegularLink to="/faq">FAQ </FooterRegularLink>
           </FooterLinksItems>
         </FooterLinksWrapper>
         <FooterLinksWrapper>
           <FooterLinksItems>
             <FooterLinkTitle>Legal</FooterLinkTitle>
-            <FooterRegularLink to="/stocker/privacy-policy">Privacy Policy</FooterRegularLink>
-            <FooterRegularLink to="/stocker/terms-of-service">Terms of Service</FooterRegularLink>
+            <FooterRegularLink to="/privacy-policy">Privacy Policy</FooterRegularLink>
+            <FooterRegularLink to="/terms-of-service">Terms of Service</FooterRegularLink>
           </FooterLinksItems>
           <FooterLinksItems>
             <FooterLinkTitle>Social Media</FooterLinkTitle>
@@ -62,7 +62,7 @@ const Footer = () => {
       </FooterLinksContainer>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to="/stocker">
+          <SocialLogo to="/">
             <Logo src={logoFinal} alt="Image"/>
             Stocker
           </SocialLogo>

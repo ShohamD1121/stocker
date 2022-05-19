@@ -60,18 +60,18 @@ const Navbar = () => {
                 <NavLinks to="/features" onClick={closeMobileMenu}>Features</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/stocker/faq" onClick={closeMobileMenu}>FAQ</NavLinks>
+                <NavLinks to="/faq" onClick={closeMobileMenu}>FAQ</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/stocker/contact-us" onClick={closeMobileMenu}>Contact Us</NavLinks>
+                <NavLinks to="/contact-us" onClick={closeMobileMenu}>Contact Us</NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/stocker/download">
+                  <NavBtnLink to="/download">
                     <Button primary BtnTextcolor>Download Now</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/stocker/download" onClick={closeMobileMenu}>
+                  <NavBtnLink to="/download" onClick={closeMobileMenu}>
                     <Button fontBig primary BtnTextcolor>
                       Download Now
                     </Button>

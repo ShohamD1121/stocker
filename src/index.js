@@ -20,12 +20,12 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} exact />
-        <Route path="/features" element={<Features />} />
-        <Route path="/stocker/faq" element={<FAQ />} />
-        <Route path="/stocker/contact-us" element={<ContactUs />} />
-        <Route path="/stocker/download" element={<Download />} />
-        <Route path="/stocker/terms-of-service" element={<Terms />}/>
-        <Route path="/stocker/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/features" element={<Features />} exact/>
+        <Route path="/faq" element={<FAQ />} exact/>
+        <Route path="/contact-us" element={<ContactUs />} exact/>
+        <Route path="/download" element={<Download />} exact/>
+        <Route path="/terms-of-service" element={<Terms />} exact/>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} exact/>
       </Routes>
     </BrowserRouter>
   </Provider>
