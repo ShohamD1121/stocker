@@ -45,7 +45,7 @@ const Navbar = () => {
       <IconContext.Provider value={{ color: "#000" }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/stocker" onClick={closeMobileMenu}>
+            <NavLogo to="/" onClick={closeMobileMenu}>
               <Logo src={logoFinal} alt="image" />
               Stocker<Dot>.</Dot>
             </NavLogo>
@@ -54,10 +54,10 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/stocker" onClick={closeMobileMenu}>Home</NavLinks>
+                <NavLinks to="/" onClick={closeMobileMenu}>Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/stocker/features" onClick={closeMobileMenu}>Features</NavLinks>
+                <NavLinks to="/features" onClick={closeMobileMenu}>Features</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/stocker/faq" onClick={closeMobileMenu}>FAQ</NavLinks>
