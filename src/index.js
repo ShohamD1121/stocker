@@ -19,7 +19,7 @@ root.render(
   <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path="/stocker" element={<App />} />
+        <Route path="/stocker" element={<App />} exact />
         <Route path="/stocker/features" element={<Features />} />
         <Route path="/stocker/faq" element={<FAQ />} />
         <Route path="/stocker/contact-us" element={<ContactUs />} />

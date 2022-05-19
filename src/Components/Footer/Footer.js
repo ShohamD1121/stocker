@@ -62,7 +62,7 @@ const Footer = () => {
       </FooterLinksContainer>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to="/">
+          <SocialLogo to="/stocker">
             <Logo src={logoFinal} alt="Image"/>
             Stocker
           </SocialLogo>
