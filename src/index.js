@@ -26,6 +26,7 @@ root.render(
         <Route path="/download" element={<Download />} exact/>
         <Route path="/terms-of-service" element={<Terms />} exact/>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} exact/>
+        <Redirect to="/" />
       </Routes>
     </BrowserRouter>
   </Provider>
