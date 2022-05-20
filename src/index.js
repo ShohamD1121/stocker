@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Features from "./Pages/Features/Features";
 import FAQ from "./Pages/FAQ/FAQ";
 import ContactUs from "./Pages/Contact Us/ContactUs";
@@ -20,13 +20,13 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} exact />
-        <Route path="/features" element={<Features />} exact/>
-        <Route path="/faq" element={<FAQ />} exact/>
-        <Route path="/contact-us" element={<ContactUs />} exact/>
-        <Route path="/download" element={<Download />} exact/>
-        <Route path="/terms-of-service" element={<Terms />} exact/>
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} exact/>
-        <Redirect to="/" />
+        <Route path="/features" element={<Features />} exact />
+        <Route path="/faq" element={<FAQ />} exact />
+        <Route path="/contact-us" element={<ContactUs />} exact />
+        <Route path="/download" element={<Download />} exact />
+        <Route path="/terms-of-service" element={<Terms />} exact />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} exact />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   </Provider>
