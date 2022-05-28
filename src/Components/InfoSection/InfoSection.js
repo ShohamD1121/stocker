@@ -82,7 +82,7 @@ const InfoSection = ({
                       <Header
                         style={{ background: "#D6FFDE", color: "#00D72B" }}
                       >
-                        <FaSearch style={{ fontSize: "20px"}} /> Stock Picking
+                        <FaSearch style={{ fontSize: "20px" }} /> Stock Picking
                       </Header>
                     )}
                     {!isMain && objNum === 3 && (
@@ -94,9 +94,9 @@ const InfoSection = ({
                     )}
                     {!isMain && objNum === 4 && (
                       <Header
-                        style={{ background: "#D6FFDE", color: "#00D72B"}}
+                        style={{ background: "#D6FFDE", color: "#00D72B" }}
                       >
-                        <FaNewspaper style={{ fontSize: "20px"}} /> News and
+                        <FaNewspaper style={{ fontSize: "20px" }} /> News and
                         Analysis
                       </Header>
                     )}
@@ -206,6 +206,7 @@ const InfoSection = ({
                           </div>
                         )}
                         <Button
+                          className="button-ga"
                           fontBig
                           type="submit"
                           onClick={() => setIsSubmitted(true)}
