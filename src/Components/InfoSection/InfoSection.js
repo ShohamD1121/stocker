@@ -20,6 +20,7 @@ import { FaSearch, FaDollarSign, FaNewspaper } from "react-icons/fa";
 import { Form, FormInput } from "../Footer/Footer.elements";
 import AfterSumbit from "../AfterSumbit";
 import { Slide } from "@mui/material";
+import database from "../../firebase";
 
 const InfoSection = ({
   lightBg,
@@ -57,6 +58,12 @@ const InfoSection = ({
       dispatch(sendEmail(email));
       setIsEmailSent(true);
       setIsEmailValid(true);
+      database
+        .ref("users")
+        .push({
+          gmail: email.email,
+        })
+        .catch((err) => console.log(err));
     } else {
       setIsEmailValid(false);
     }
